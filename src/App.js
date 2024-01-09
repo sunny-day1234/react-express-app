@@ -7,6 +7,7 @@ function App() {
   const [data, setData] = useState([]);
   const getData = async () => {
     const response = await axios.get("/api/users");
+    console.log(123);
     setData(response.data);
   };
 
