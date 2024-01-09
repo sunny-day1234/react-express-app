@@ -39,5 +39,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:5051"
+  "proxy": "https://react-express-app-eight.vercel.app"
 }
