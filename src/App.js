@@ -1,9 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [data, setData] = useState([]);
+  const getData = async () => {
+    const response = await axios.get("/api/users");
+
+    setData(response.data);
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
   return (
     <div className="App">
+      {JSON.stringify(data)}
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
