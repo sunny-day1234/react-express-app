@@ -39,5 +39,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://react-express-app-eight.vercel.app"
+  "proxy": "https://react-express-app-eight.vercel.app:8080"
 }
