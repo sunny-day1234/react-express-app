@@ -16,10 +16,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "concurrently 'react-scripts start' 'cd server && npm run start'",
-    "build": "concurrently 'react-scripts build' 'cd server && npm run build'",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +39,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://react-express-app-eight.vercel.app:8080"
+  "proxy": "http://localhost:5051"
 }

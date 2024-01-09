@@ -14,8 +14,6 @@ app.get("/api/users", function (req, res) {
   ]);
 });
 
-const port = process.env.PORT || 8080;
-
-app.listen(port, function () {
+app.listen(5050, function () {
   console.log("Example app listening on port 3000!");
 });
